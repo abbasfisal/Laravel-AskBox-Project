@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.ripple{
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple:before {
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.6);
+    content:'';
+    position: absolute;
+    top: 50%; left: 50%;
+    width:0; height:0;
+}
+
+.ripple:focus:before {
+    transition: all 0.5s ease-out;
+    opacity:0;
+    width:160px;
+    height:160px;
+    margin-top:-80px;
+    margin-left:-80px;
+}
+
+.button-base:hover{
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.button-base{
+    font-family: 'Roboto', sans-serif;
+    -webkit-appearance: none;
+    border: none;
+    text-transform: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #4285f4;
+    color: #fff;
+    vertical-align: middle;
+    border-radius: 3px;
+    line-height: 36px;
+    min-height: 36px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration:none;
+    text-transform: uppercase;
+    min-width: 5.14em;
+    padding:0 1em;
+    margin: 0 0.25em;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+}
+
+.button-base:focus{
+    outline:0;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.content {
+    display: inline-block;
+    text-align: left;
+}
